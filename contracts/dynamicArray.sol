@@ -20,4 +20,19 @@ contract DynamicArray {
     function length () public view returns(uint){
         return id.length;
     }
+
+    uint256[] public numbers ;
+
+    function insertElement(uint256 item) public{
+            numbers.push(item);
+    }
+    function getElement (uint256 i) public view returns(uint256){
+           if(i < numbers.length)
+           {
+            return numbers[i];
+           }
+           else{
+                return 0;
+           }
+    }
 }
