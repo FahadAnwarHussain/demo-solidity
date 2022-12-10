@@ -31,8 +31,8 @@ contract DynamicArray {
            {
             return numbers[i];
            }
-           else{
+            
                 return 0;
-           }
+            
     }
 }

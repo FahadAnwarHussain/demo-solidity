@@ -9,7 +9,7 @@ contract Loops{
     uint[5] public arr = [10,20,30,40,50];
 
 
-    function getLoopValues() public view returns(uint){
+    function getLoopValues() public view returns(uint256){
         for(uint i=0; i<=values.length; i++){
                 return values[i];
         }
@@ -22,15 +22,15 @@ contract Loops{
               }
         }
     }
-  
-  function createLoop() public{
     
-     for(uint i =0; i <arr.length; i++){
-         arr[i] *= 2;
-     }
-  }
-  function returnArray() public view returns(uint[5] memory){
-    return arr;
-     
-  }
+    function createLoop() public{
+        
+        for(uint i =0; i <arr.length; i++){
+            arr[i] *= 2;
+        }
+    }
+    function returnArray() public view returns(uint[5] memory){
+        return arr;
+        
+    }
 }
